@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/izualkernan/Documents/Semesters/Fall2020/Courses/COE312/code/Java/.metadata/.plugins/org.eclipse.jdt.core
+857627028.index
+1820465688.index
+3070904283.index

@@ -1,0 +1,32 @@
+package variables;
+
+public class Driver {
+
+	@SuppressWarnings("deprecation")
+	public static void main(String[] args) {
+		
+		
+		// primitive variables
+		int x = 10;
+		double y = 20.0;
+		System.out.println(x);
+		
+		
+		
+		//class variables
+		Integer i;
+		i = new Integer(10);
+		
+		System.out.println(i.getClass());
+		
+		//converting between class and primitive variables
+		
+	
+		// using valueof
+		i = Integer.valueOf("231");
+		i = Integer.parseInt("123");
+		
+
+	}
+
+}
