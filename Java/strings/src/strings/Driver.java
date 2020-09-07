@@ -8,9 +8,7 @@ public class Driver {
 		System.out.println(s);
 		
 		s = "hello how are you?";
-	
 		System.out.println(s);
-		
 		
 		
 		String txt = "Hello World";
@@ -31,7 +29,7 @@ public class Driver {
 		// if not there u will get a -1
 		System.out.println(s.indexOf("tarzan"));
 		
-		/*
+		
 		
 		// concatenate string
 		
@@ -40,14 +38,19 @@ public class Driver {
 		
 		System.out.println(s1+s2);
 		
+		//concatenating strings to numbers
+		
+		System.out.println(s1+10);
+		
 		
 		// going back between bytes and strings
 		
 		byte [] b = new byte[s.length()];
+		
 		b = s.getBytes();
 		
-		System.out.println((char)b[0]);
-		*/
+		System.out.println(b[0]);
+		
 		
 
 		
