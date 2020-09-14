@@ -1,7 +1,8 @@
 package classes;
 
-public class Mamal {
+public  abstract class Mamal {
      int weight;
+     String name; // ?? why not
      
      Mamal(){
     	 
