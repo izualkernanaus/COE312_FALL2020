@@ -10,9 +10,9 @@ package classes;  // collection of classes (kind of like friends)
 // C++  Cat :public Mamal ...
 
 
-//  Cat IS-A Mamal 
+//  Cat IS-A Mammal 
 
-public class Cat extends Mamal {
+public class Cat extends Mammal implements Pet, Frisky{
 	
    // public, private or protected?
    // in C++ name and weight are private.
@@ -22,12 +22,20 @@ public class Cat extends Mamal {
    int weight;
    
    // just like C++ -- this is a constructor 
-   // called when we do new
+   // called when we do a new(...)
    
    Cat(){
 	   System.out.println("called when created");
    }
 
+   Cat(int weight){
+  	 super(weight);  // call the parent's constructor with weight
+   }
+   
+   Cat(int weight, int num_legs){
+  	 super(weight,num_legs);  // call the parent's constructor with weight
+   }
+   
    Cat(String name, int weight){
 	   // this means "me" 
 	   this.weight = weight;
@@ -45,9 +53,16 @@ public class Cat extends Mamal {
    
    public String toString() {
 	 
-	   String printable= "{ اسم="+name+" وزن="+weight+"}";
+	   String printable= "{ اسم="+name+" وزن="+weight+"}"+" in "+this.getClass().getPackage();
 	   return printable;
    }
+
+@Override
+public void play() {
+	// TODO Auto-generated method stub
+	System.out.println(this+" is playing");
+	
+}
    
    
 }

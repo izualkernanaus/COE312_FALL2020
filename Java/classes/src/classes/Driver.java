@@ -24,18 +24,8 @@ public static void main(String[] args) {
 	
     d.speak();  // in c++ you would have done c->speak();
     
-    // 
-   
-    Mamal m = new Mamal(); // does this make sense? NO. 
-    
-    
-    
-    
-    
-    
-    
-    
-
+  
+    // Mamal m = new Mamal(); // does this make sense? NO. 
 	
 	
 }
