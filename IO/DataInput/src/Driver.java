@@ -6,9 +6,11 @@ public class Driver {
 		InputStream input = new FileInputStream("data.txt");
 		DataInputStream inst = new DataInputStream(input);
 		
+		while(true) {
 		float f = inst.readFloat();
+		}
 		
-		System.out.println(f);
+		//System.out.println(f);
 		
 	}
 }
