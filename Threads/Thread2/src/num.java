@@ -1,12 +1,22 @@
 import java.util.Random;
 
 public class num implements Runnable {
-Random r = new Random();
+
+	Random r = new Random();
 
 num (){
+	
+	//Runnable is NOT a Thread so we need a thread.
+	
+	// Create a thread and attach it to ourselves
+	
 	Thread t = new Thread(this);
+	
+	// start the thread. 
+	
 	t.start();
 }
+
 // my behavior -- DO NOT CALL run() directly.
 
 public void run() {

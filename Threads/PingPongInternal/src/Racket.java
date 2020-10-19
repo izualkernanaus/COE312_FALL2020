@@ -12,6 +12,11 @@ public class Racket implements Runnable {
 	public void run() {
 
 		while (true) {
+			
+			// need to use the get and the 
+			// the set to access the state 
+			// of the shared ball 
+			
 			if (b.getState() == "ping")
 				b.setState("pong");
 			else if (b.getState()== "pong")
