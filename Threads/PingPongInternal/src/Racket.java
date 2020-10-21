@@ -22,8 +22,7 @@ public class Racket implements Runnable {
 			else if (b.getState()== "pong")
 				b.setState("ping");
 
-			System.out.println(this + " state=" + b.state);
+			System.out.println(this + " state=" + b.getState());
 		}
 	}
 }
-
