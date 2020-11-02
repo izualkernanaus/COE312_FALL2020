@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Date;
 
 public class ConcreteSubject implements Subject {
 	private ArrayList observers;
@@ -10,7 +11,8 @@ public class ConcreteSubject implements Subject {
 	public void notifyObservers() {
 		for (int i = 0; i < observers.size(); i++) {
 			Observer observer = (Observer) observers.get(i);
-			observer.update();
+			// observer.update();
+			observer.update(new Date());
 		}
 	}
 
