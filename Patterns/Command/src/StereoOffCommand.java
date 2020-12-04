@@ -13,6 +13,7 @@ public class StereoOffCommand implements Command {
 	@Override
 	public void undo() {
 		// TODO Auto-generated method stub
-		
+		stereo.on();
 	}
+
 }

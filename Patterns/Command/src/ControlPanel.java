@@ -1,20 +1,21 @@
 public class ControlPanel {  
 	
+	// make a control panel with a single slot 
+	// light on
 	Command [] slots;
-	Command last;
 	
-	ControlPanel(Command slots []){
+	ControlPanel(Command [] slots){
 		this.slots = slots;
 	}
-  
-	// do command at slot i
-	void buttonWasPressed(int i){
-		slots[i].execute();
-		last = slots[i];
-	}
 	
-	void undo() {
-		last.undo();
+	// with one slot
+	void push(int index) {
+		
+		// call the execute function of the 
+		// appropriate command in the 
+		// respective slot 
+		
+		slots[index].execute();
 	}
 
 }
