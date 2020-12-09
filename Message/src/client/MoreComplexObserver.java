@@ -16,7 +16,7 @@ public class MoreComplexObserver extends ConcreteObserver implements Runnable {
 	@Override
 	public synchronized void update(Message m) {
 		
-		System.out.println("received a "+ m.payload+" message from "+m.origin);
+		//System.out.println("received a "+ m.payload+" message from "+m.origin);
 		
 		if(m.topic=="time") {
 			

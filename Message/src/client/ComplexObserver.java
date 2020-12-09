@@ -13,7 +13,7 @@ public class ComplexObserver extends ConcreteObserver implements Runnable {
 	@Override
 	public void update(Message m) {
 		
-		System.out.println("received a "+ m.payload+" message from "+m.origin);
+		// System.out.println("received a "+ m.payload+" message from "+m.origin);
 		
 		if(m.topic=="time") {
 			
@@ -21,7 +21,7 @@ public class ComplexObserver extends ConcreteObserver implements Runnable {
 			
 		}
 		else if(m.topic =="speaking") {
-			System.out.println("some one is speaking.");
+			System.out.println("some one is speaking. The flag is:"+m.payload);
 		}
 	}
 	
